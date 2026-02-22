@@ -1,0 +1,31 @@
+name: QVC Stock Check
+
+on:
+  schedule:
+    # 毎日 19:30 JST (10:30 UTC) に起動 — ライブ開始（20:00 JST）の30分前
+    - cron: '30 10 * * *'
+  workflow_dispatch:
+    # 手動実行も可能
+
+jobs:
+  stock-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180  # 最大3時間
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run stock checker
+        env:
+          SHOPLIVE_ACCESS_KEY: ${{ secrets.SHOPLIVE_ACCESS_KEY }}
+          SHOPLIVE_SECRET_KEY: ${{ secrets.SHOPLIVE_SECRET_KEY }}
+        run: python runner.py
