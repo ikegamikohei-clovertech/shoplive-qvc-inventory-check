@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --bg-color: rgba(255, 255, 255, 0.85); 
+            --blur-val: 15px;
+            --text-main: #000;
+            --text-sub: #444;
+            --ok-color: #008f7a;
+            --warn-color: #c78e00;
+            --ng-color: #d62828;
+            
+            /* 高さの厳密定義 (合計 300px) */
+            --frame-h: 300px;
+            --padding-v: 15px;       /* 上下 15px * 2 = 30px */
+            --name-h: 50px;          /* 商品名 50px */
+            --content-h: 220px;      /* 残り 220px を在庫エリアに */
+            --row-h: 110px;          /* 1段あたり 110px (2段で 220px) */
+        }
+
+        body {
+            width: 1080px;
+            height: var(--frame-h);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+            background: transparent;
+        }
+
+        .outer-frame {
+            width: 1080px;
+            height: var(--frame-h);
+            background: var(--bg-color);
+            backdrop-filter: blur(var(--blur-val));
+            -webkit-backdrop-filter: blur(var(--blur-val));
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            padding: var(--padding-v) 30px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255,255,255,0.4);
+            position: relative;
+        }
+
+        /* 1段目：商品名 (高さ固定 50px) */
+        #product-name {
+            height: var(--name-h);
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--text-main);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: var(--name-h);
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        /* 在庫エリア (高さ固定 220px) */
+        #content-body {
+            height: var(--content-h);
+            display: flex;
+            flex-direction: column; /* 縦に2段積む */
+            justify-content: flex-start;
+            gap: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .fade-out { opacity: 0; }
+
+        /* 在庫行 (高さ固定 110px) */
+        .content-row {
+            height: var(--row-h);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            overflow: hidden;
+        }
+
+        /* カラーグループ (色名 + サイズ並び) */
+        .color-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        /* 2段目：カラー名 (高さ 25px) */
+        .color-title {
+            font-size: 15px;
+            color: var(--text-sub);
+            font-weight: bold;
+            height: 25px;
+            line-height: 25px;
+            border-left: 5px solid var(--text-main);
+            padding-left: 8px;
+        }
+
+        /* 3段目：サイズボックス並び (高さ 75px) */
+        .size-container {
+            display: flex;
+            gap: 8px;
+        }
+
+        .size-box {
+            border: 2px solid #999;
+            min-width: 65px;
+            width: fit-content;
+            height: 75px; /* ボックス高さ固定 */
+            padding: 0 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.6);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        /* サイズ表記を最大化 */
+        .size-name {
+            font-size: 26px;
+            color: var(--text-main);
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+
+        .status-symbol {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        /* サイズなし：カラー単体 */
+        .no-size-box {
+            height: 75px;
+            min-width: 150px;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .ats-Y { border-color: var(--ok-color); color: var(--ok-color); }
+        .ats-L { border-color: var(--warn-color); color: var(--warn-color); }
+        .ats-N { border-color: var(--ng-color); color: var(--ng-color); background: rgba(214, 40, 40, 0.05); }
+
+        #page-info {
+            position: absolute;
+            bottom: 8px;
+            right: 25px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-frame">
+        <div id="product-name">LOADING...</div>
+        <div id="content-body">
+            <div id="row-1" class="content-row"></div>
+            <div id="row-2" class="content-row"></div>
+        </div>
+        <div id="page-info"></div>
+    </div>
+
+    <script>
+        const ATS_SYMBOL = { 'Y': '〇', 'L': '△', 'N': '✖' };
+        let products = [];
+        let productIdx = 0;
+        let pageIdx = 0;
+        let displayPages = []; 
+        let currentLoadedProductId = null;
+
+        async function loadData() {
+            try {
+                const response = await fetch('stock_status.json?t=' + Date.now());
+                const data = await response.json();
+                products = data.products;
+                if (products.length > 0) processPages();
+            } catch (e) {
+                document.getElementById('product-name').textContent = "DATA ERROR";
+            }
+        }
+
+        function processPages() {
+            const p = products[productIdx];
+            if (!p) return;
+
+            if (currentLoadedProductId !== p.product_id) {
+                const grouped = p.variants.reduce((acc, v) => {
+                    if (!acc[v.color]) acc[v.color] = [];
+                    acc[v.color].push(v);
+                    return acc;
+                }, {});
+
+                const colorKeys = Object.keys(grouped);
+                displayPages = [];
+                let currentPage = { row1: [], row2: [] };
+                let rowWidths = { row1: 0, row2: 0 };
+                const MAX_W = 1000;
+
+                colorKeys.forEach(color => {
+                    const variants = grouped[color];
+                    const isNoSize = variants.length === 1 && !variants[0].size;
+                    
+                    // 幅計算
+                    let itemWidth = 0;
+                    if (isNoSize) {
+                        itemWidth = color.length * 18 + 100;
+                    } else {
+                        itemWidth = variants.reduce((s, v) => s + (v.size.length * 15 + 45), 0) + 20;
+                    }
+                    if (itemWidth > MAX_W) itemWidth = MAX_W;
+
+                    // Row1に入るか？
+                    if (rowWidths.row1 + itemWidth <= MAX_W) {
+                        currentPage.row1.push({ name: color, items: variants, noSize: isNoSize });
+                        rowWidths.row1 += itemWidth + 30;
+                    } 
+                    // Row2に入るか？
+                    else if (rowWidths.row2 + itemWidth <= MAX_W) {
+                        currentPage.row2.push({ name: color, items: variants, noSize: isNoSize });
+                        rowWidths.row2 += itemWidth + 30;
+                    } 
+                    // どちらも無理なら次ページ
+                    else {
+                        displayPages.push(currentPage);
+                        currentPage = { row1: [{ name: color, items: variants, noSize: isNoSize }], row2: [] };
+                        rowWidths = { row1: itemWidth + 30, row2: 0 };
+                    }
+                });
+                
+                if (currentPage.row1.length > 0) displayPages.push(currentPage);
+                pageIdx = 0;
+                currentLoadedProductId = p.product_id;
+            }
+            updateUI();
+        }
+
+        function updateUI() {
+            const p = products[productIdx];
+            const bodyEl = document.getElementById('content-body');
+            const row1El = document.getElementById('row-1');
+            const row2El = document.getElementById('row-2');
+            const nameEl = document.getElementById('product-name');
+            const pageEl = document.getElementById('page-info');
+
+            bodyEl.classList.add('fade-out');
+
+            setTimeout(() => {
+                nameEl.textContent = p.name;
+                const pageData = displayPages[pageIdx];
+                
+                const renderColor = (obj) => {
+                    if (obj.noSize) {
+                        const v = obj.items[0];
+                        return `<div class="size-box no-size-box ats-${v.ats}">
+                                    <span style="font-size:24px; font-weight:900;">${obj.name}</span>
+                                    <span style="font-size:24px;">${ATS_SYMBOL[v.ats]}</span>
+                                </div>`;
+                    } else {
+                        return `<div class="color-group">
+                                    <div class="color-title">${obj.name}</div>
+                                    <div class="size-container">
+                                        ${obj.items.map(v => `<div class="size-box ats-${v.ats}">
+                                            <span class="size-name">${v.size}</span>
+                                            <span class="status-symbol">${ATS_SYMBOL[v.ats]}</span>
+                                        </div>`).join('')}
+                                    </div>
+                                </div>`;
+                    }
+                };
+
+                row1El.innerHTML = pageData.row1.map(renderColor).join('');
+                row2El.innerHTML = pageData.row2.map(renderColor).join('');
+                
+                pageEl.textContent = `${productIdx + 1} | Page ${pageIdx + 1}/${displayPages.length}`;
+                bodyEl.classList.remove('fade-out');
+
+                pageIdx++;
+                if (pageIdx >= displayPages.length) {
+                    pageIdx = 0;
+                    productIdx = (productIdx + 1) % products.length;
+                    if (pageIdx === 0) currentLoadedProductId = null;
+                }
+            }, 300);
+        }
+
+        loadData();
+        setInterval(processPages, 4000); 
+        setInterval(loadData, 120000);
+    </script>
+</body>
+</html>
