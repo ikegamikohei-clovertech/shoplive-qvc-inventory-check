@@ -78,12 +78,16 @@ def publish_to_gh_pages():
     if not os.path.exists(STOCK_STATUS_FILE):
         return
 
-    dest = os.path.join(gh_pages_dir, "stock_status.json")
-    shutil.copy2(STOCK_STATUS_FILE, dest)
+    shutil.copy2(STOCK_STATUS_FILE, os.path.join(gh_pages_dir, "stock_status.json"))
+
+    # index.html も最新をコピー
+    index_src = os.path.join(os.path.dirname(STOCK_STATUS_FILE), "index.html")
+    if os.path.exists(index_src):
+        shutil.copy2(index_src, os.path.join(gh_pages_dir, "index.html"))
 
     try:
         subprocess.run(
-            ["git", "add", "stock_status.json"],
+            ["git", "add", "stock_status.json", "index.html"],
             cwd=gh_pages_dir, check=True, capture_output=True,
         )
         subprocess.run(
