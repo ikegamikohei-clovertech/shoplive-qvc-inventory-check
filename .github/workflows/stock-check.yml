@@ -7,6 +7,9 @@ on:
   workflow_dispatch:
     # 手動実行も可能
 
+permissions:
+  contents: write
+
 jobs:
   stock-check:
     runs-on: ubuntu-latest
@@ -24,8 +27,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Setup gh-pages worktree
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages
+          git worktree add gh-pages-dir gh-pages
+
       - name: Run stock checker
         env:
           SHOPLIVE_ACCESS_KEY: ${{ secrets.SHOPLIVE_ACCESS_KEY }}
           SHOPLIVE_SECRET_KEY: ${{ secrets.SHOPLIVE_SECRET_KEY }}
+          GH_PAGES_DIR: ${{ github.workspace }}/gh-pages-dir
         run: python runner.py

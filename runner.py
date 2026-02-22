@@ -5,16 +5,19 @@ GitHub Actions上での長時間ポーリング用。
 1. scheduler.py でスケジュール取得
 2. 本日のライブがあれば、開始5分前まで待機
 3. ライブ時間帯中は2分間隔で main.py を実行
-4. 時間帯を過ぎたら終了
+4. 毎回の実行後、output/ を gh-pages にpush（GitHub Pages公開用）
 """
 
 import json
 import logging
+import os
+import shutil
+import subprocess
 import time
 from datetime import datetime, timezone, timedelta
 
 import scheduler
-from config import SCHEDULE_FILE, SCHEDULE_BUFFER_MINUTES, DEFAULT_LIVE_DURATION_MINUTES
+from config import SCHEDULE_FILE, SCHEDULE_BUFFER_MINUTES, DEFAULT_LIVE_DURATION_MINUTES, STOCK_STATUS_FILE
 
 logging.basicConfig(
     level=logging.INFO,
@@ -66,6 +69,37 @@ def get_todays_window():
     return earliest_start, latest_end
 
 
+def publish_to_gh_pages():
+    """output/stock_status.json を gh-pages ブランチにpushする。"""
+    gh_pages_dir = os.environ.get("GH_PAGES_DIR")
+    if not gh_pages_dir or not os.path.isdir(gh_pages_dir):
+        return
+
+    if not os.path.exists(STOCK_STATUS_FILE):
+        return
+
+    dest = os.path.join(gh_pages_dir, "stock_status.json")
+    shutil.copy2(STOCK_STATUS_FILE, dest)
+
+    try:
+        subprocess.run(
+            ["git", "add", "stock_status.json"],
+            cwd=gh_pages_dir, check=True, capture_output=True,
+        )
+        subprocess.run(
+            ["git", "commit", "-m", "Update stock status"],
+            cwd=gh_pages_dir, check=True, capture_output=True,
+        )
+        subprocess.run(
+            ["git", "push", "origin", "gh-pages"],
+            cwd=gh_pages_dir, check=True, capture_output=True,
+        )
+        logger.info("  gh-pages にpush完了")
+    except subprocess.CalledProcessError:
+        # 変更なし（同じ内容）の場合はcommitが失敗するが問題なし
+        pass
+
+
 def run():
     # 1. スケジュール取得
     logger.info("スケジュール取得中...")
@@ -96,6 +130,7 @@ def run():
         logger.info("--- 在庫チェック実行 ---")
         try:
             main_module.main(skip_schedule_check=True)
+            publish_to_gh_pages()
         except Exception as e:
             logger.error(f"main.py エラー: {e}", exc_info=True)
         time.sleep(POLL_INTERVAL)
