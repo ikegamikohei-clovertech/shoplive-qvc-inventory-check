@@ -1,26 +1,11 @@
-import base64
-import time
-
-import jwt
 import requests
 
 from config import SHOPLIVE_ACCESS_KEY, SHOPLIVE_SECRET_KEY, SHOPLIVE_API_BASE
 
 
-def _generate_token():
-    """Shoplive API用のJWTトークンを生成する。"""
-    secret = base64.b64decode(SHOPLIVE_SECRET_KEY)
-    payload = {
-        "accessKey": SHOPLIVE_ACCESS_KEY,
-        "exp": int(time.time()) + 300,
-        "iat": int(time.time()),
-    }
-    return jwt.encode(payload, secret, algorithm="HS256")
-
-
 def _headers():
     return {
-        "Authorization": _generate_token(),
+        "Authorization": SHOPLIVE_SECRET_KEY,
         "accept": "application/json",
     }
 
@@ -57,27 +42,54 @@ def get_ready_campaigns():
     return get_campaigns(campaign_status="READY")
 
 
+def get_target_campaigns(ready_threshold_minutes=10):
+    """在庫チェック対象のキャンペーンを取得する。
+
+    対象:
+    - ONAIR中の全キャンペーン
+    - READY状態で開始予定が指定分数以内のキャンペーン
+    """
+    from datetime import datetime, timezone, timedelta
+
+    campaigns = get_onair_campaigns()
+
+    ready = get_ready_campaigns()
+    now = datetime.now(timezone.utc)
+    threshold = timedelta(minutes=ready_threshold_minutes)
+
+    for c in ready:
+        start_at = c.get("scheduledStartAt")
+        if not start_at:
+            continue
+        start = datetime.fromisoformat(start_at.replace("Z", "+00:00"))
+        if start - now <= threshold:
+            c["_ready_starting_soon"] = True
+            campaigns.append(c)
+
+    return campaigns
+
+
 def get_campaign_products(campaign_key):
     """キャンペーンに紐づく商品リストを取得する。"""
-    url = f"{SHOPLIVE_API_BASE}/{SHOPLIVE_ACCESS_KEY}/console/{campaign_key}/product"
+    url = f"{SHOPLIVE_API_BASE}/{SHOPLIVE_ACCESS_KEY}/campaign/{campaign_key}/product"
     resp = requests.get(url, headers=_headers())
     resp.raise_for_status()
     return resp.json()
 
 
 def update_stock_status(campaign_key, product_ids, status):
-    """商品の在庫ステータスを更新する。
+    """キャンペーン内の商品の在庫ステータスを更新する。
 
     Args:
         campaign_key: キャンペーンキー
-        product_ids: Shoplive上の商品IDリスト
+        product_ids: Shoplive上の商品IDリスト（int）
         status: "IN_STOCK", "LOW_IN_STOCK", or "SOLD_OUT"
     """
-    url = f"{SHOPLIVE_API_BASE}/{SHOPLIVE_ACCESS_KEY}/console/{campaign_key}/product/stockStatus"
-    body = {
-        "productIds": product_ids,
-        "stockStatus": status,
-    }
-    resp = requests.put(url, headers=_headers(), json=body)
+    url = (f"{SHOPLIVE_API_BASE}/{SHOPLIVE_ACCESS_KEY}"
+           f"/console/{campaign_key}/product/stockStatus")
+    headers = _headers()
+    headers["content-type"] = "application/json"
+    body = [{"productId": pid} for pid in product_ids]
+    resp = requests.put(url, headers=headers, params={"stockStatus": status}, json=body)
     resp.raise_for_status()
     return resp.json() if resp.content else None

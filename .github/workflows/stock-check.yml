@@ -2,8 +2,8 @@ name: QVC Stock Check
 
 on:
   schedule:
-    # 毎日 19:30 JST (10:30 UTC) に起動 — ライブ開始（20:00 JST）の30分前
-    - cron: '30 10 * * *'
+    # 毎日 19:50 JST (10:50 UTC) に起動 — ライブ開始（20:00 JST）の10分前
+    - cron: '50 10 * * *'
   workflow_dispatch:
     # 手動実行も可能
 

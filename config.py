@@ -11,7 +11,7 @@ SHOPLIVE_API_BASE = "https://private.shopliveapi.com/v2"
 # ライブ前後のバッファ（分）
 SCHEDULE_BUFFER_MINUTES = 5
 # scheduledEndAtがnullの場合のデフォルト配信時間（分）
-DEFAULT_LIVE_DURATION_MINUTES = 120
+DEFAULT_LIVE_DURATION_MINUTES = 60
 
 BASE_DIR = os.path.dirname(__file__)
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")

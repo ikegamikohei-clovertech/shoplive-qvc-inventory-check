@@ -39,20 +39,16 @@ def get_stock(product_id):
     resp.raise_for_status()
     data = resp.json()
 
-    product_name = data.get("productName", "")
+    product_name = data.get("shortDescription", "")
     variants = []
 
-    # SKU情報をパース
-    for color_group in data.get("colours", []):
-        color_name = color_group.get("colourName", "")
-        for size_info in color_group.get("sizes", []):
-            size_name = size_info.get("sizeName", "")
-            ats = size_info.get("ats", "N")
-            variants.append({
-                "color": color_name,
-                "size": size_name,
-                "ats": ats,
-            })
+    # items配列から各SKU（カラー×サイズ）の在庫情報をパース
+    for item in data.get("items", []):
+        variants.append({
+            "color": item.get("detailColorCode", ""),
+            "size": item.get("detailSizeCode", ""),
+            "ats": item.get("ats", "N"),
+        })
 
     overall_status = _determine_status(variants)
 

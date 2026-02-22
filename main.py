@@ -28,21 +28,25 @@ def main(skip_schedule_check=False):
         if not is_within_live_window():
             return
 
-    # 1. ONAIR中のキャンペーンを取得
-    campaigns = shoplive_client.get_onair_campaigns()
+    # 1. 対象キャンペーンを取得（ONAIR + 開始10分以内のREADY）
+    campaigns = shoplive_client.get_target_campaigns(ready_threshold_minutes=10)
 
     if not campaigns:
-        logger.info("配信中のキャンペーンなし（ライブ時間帯内だがONAIR未検出）")
+        logger.info("対象キャンペーンなし")
         return
 
     for campaign in campaigns:
         campaign_key = campaign.get("campaignKey")
         campaign_title = campaign.get("title", "不明")
-        logger.info(f"キャンペーン検出: {campaign_title} (key={campaign_key})")
+        campaign_status = campaign.get("campaignStatus", "")
+        if campaign.get("_ready_starting_soon"):
+            logger.info(f"キャンペーン検出 [READY/まもなく開始]: {campaign_title} (key={campaign_key})")
+        else:
+            logger.info(f"キャンペーン検出 [ONAIR]: {campaign_title} (key={campaign_key})")
 
         # 2. 商品リスト取得
         products_data = shoplive_client.get_campaign_products(campaign_key)
-        products = products_data if isinstance(products_data, list) else products_data.get("content", [])
+        products = products_data.get("results", []) if isinstance(products_data, dict) else products_data
 
         if not products:
             logger.info(f"  商品なし")
@@ -53,7 +57,7 @@ def main(skip_schedule_check=False):
         all_product_results = []
 
         for product in products:
-            shoplive_product_id = product.get("productId")
+            shoplive_product_id = int(product.get("productId"))
             product_url = product.get("url", "")
             product_name = product.get("name", "不明")
 
@@ -77,7 +81,7 @@ def main(skip_schedule_check=False):
             logger.info(f"  {product_name} ({qvc_id}): {status} "
                         f"(SKU数: {len(stock_info['variants'])})")
 
-        # 5. Shopliveの在庫ステータスを更新
+        # 5. Shopliveの在庫ステータスをステータスごとに更新
         for status, product_ids in status_groups.items():
             if not product_ids:
                 continue

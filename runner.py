@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""ライブ時間帯中に main.py を1分間隔で繰り返し実行するランナー。
+"""ライブ時間帯中に main.py を2分間隔で繰り返し実行するランナー。
 
 GitHub Actions上での長時間ポーリング用。
 1. scheduler.py でスケジュール取得
 2. 本日のライブがあれば、開始5分前まで待機
-3. ライブ時間帯中は1分間隔で main.py を実行
+3. ライブ時間帯中は2分間隔で main.py を実行
 4. 時間帯を過ぎたら終了
 """
 
@@ -23,7 +23,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-POLL_INTERVAL = 60  # 秒
+POLL_INTERVAL = 120  # 秒
 
 
 def get_todays_window():
