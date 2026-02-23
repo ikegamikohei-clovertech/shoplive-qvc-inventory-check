@@ -3,6 +3,8 @@ import logging
 
 import requests
 
+from config import REQUEST_TIMEOUT
+
 logger = logging.getLogger(__name__)
 
 QVC_API_BASE = "https://qvc.jp/api/sales/presentation/v3/jp/products"
@@ -35,7 +37,7 @@ def get_stock(product_id):
         }
     """
     url = f"{QVC_API_BASE}/{product_id}"
-    resp = requests.get(url, params={"response-depth": "full"})
+    resp = requests.get(url, params={"response-depth": "full"}, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     data = resp.json()
 

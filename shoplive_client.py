@@ -1,6 +1,6 @@
 import requests
 
-from config import SHOPLIVE_ACCESS_KEY, SHOPLIVE_SECRET_KEY, SHOPLIVE_API_BASE
+from config import SHOPLIVE_ACCESS_KEY, SHOPLIVE_SECRET_KEY, SHOPLIVE_API_BASE, REQUEST_TIMEOUT
 
 
 def _headers():
@@ -24,7 +24,7 @@ def get_campaigns(campaign_status=None, page=1, count=10):
     params = {"page": page, "count": count}
     if campaign_status:
         params["campaignStatus"] = campaign_status
-    resp = requests.get(url, headers=_headers(), params=params)
+    resp = requests.get(url, headers=_headers(), params=params, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     data = resp.json()
     # レスポンス: {"results": [{"campaignMeta": {...}, "stream": {...}, ...}], "totalCount": N}
@@ -42,19 +42,29 @@ def get_ready_campaigns():
     return get_campaigns(campaign_status="READY")
 
 
-def get_target_campaigns(ready_threshold_minutes=10):
+def get_target_campaigns(ready_threshold_minutes=10, onair_max_minutes=120):
     """在庫チェック対象のキャンペーンを取得する。
 
     対象:
-    - ONAIR中の全キャンペーン
+    - ONAIR中のキャンペーン（開始から onair_max_minutes 以内のもの）
     - READY状態で開始予定が指定分数以内のキャンペーン
     """
     from datetime import datetime, timezone, timedelta
 
-    campaigns = get_onair_campaigns()
+    now = datetime.now(timezone.utc)
+    onair_limit = timedelta(minutes=onair_max_minutes)
+
+    onair = get_onair_campaigns()
+    campaigns = []
+    for c in onair:
+        start_at = c.get("scheduledStartAt")
+        if start_at:
+            start = datetime.fromisoformat(start_at.replace("Z", "+00:00"))
+            if now - start > onair_limit:
+                continue
+        campaigns.append(c)
 
     ready = get_ready_campaigns()
-    now = datetime.now(timezone.utc)
     threshold = timedelta(minutes=ready_threshold_minutes)
 
     for c in ready:
@@ -72,7 +82,7 @@ def get_target_campaigns(ready_threshold_minutes=10):
 def get_campaign_products(campaign_key):
     """キャンペーンに紐づく商品リストを取得する。"""
     url = f"{SHOPLIVE_API_BASE}/{SHOPLIVE_ACCESS_KEY}/campaign/{campaign_key}/product"
-    resp = requests.get(url, headers=_headers())
+    resp = requests.get(url, headers=_headers(), timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.json()
 
@@ -90,6 +100,6 @@ def update_stock_status(campaign_key, product_ids, status):
     headers = _headers()
     headers["content-type"] = "application/json"
     body = [{"productId": pid} for pid in product_ids]
-    resp = requests.put(url, headers=headers, params={"stockStatus": status}, json=body)
+    resp = requests.put(url, headers=headers, params={"stockStatus": status}, json=body, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.json() if resp.content else None

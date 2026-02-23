@@ -131,13 +131,18 @@ def run():
     # 4. ポーリングループ
     import main as main_module
     while datetime.now(timezone.utc) <= window_end:
+        cycle_start = time.monotonic()
         logger.info("--- 在庫チェック実行 ---")
         try:
             main_module.main(skip_schedule_check=True)
             publish_to_gh_pages()
         except Exception as e:
             logger.error(f"main.py エラー: {e}", exc_info=True)
-        time.sleep(POLL_INTERVAL)
+        elapsed = time.monotonic() - cycle_start
+        sleep_time = max(0, POLL_INTERVAL - elapsed)
+        if elapsed > POLL_INTERVAL:
+            logger.warning(f"処理時間({elapsed:.1f}秒)がポーリング間隔({POLL_INTERVAL}秒)を超過しました")
+        time.sleep(sleep_time)
 
     logger.info("ライブ時間帯終了。終了します。")
 
