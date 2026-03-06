@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-02-26T21:03:40.549193+09:00",
-  "campaign": "ポテンシャル無限大！福島の逸品",
+  "updated_at": "2026-03-06T20:15:35.944806+09:00",
+  "campaign": "初のTSV！リマドスのエラスチンサプリ",
   "products": [
     {
-      "name": "ワンダーファーム 生食用トマト使用 クラフトトマトジュース1L",
-      "product_id": "744257",
+      "name": "リマドス エラスチンリッチ90粒セット",
+      "product_id": "742661",
       "variants": [
         {
           "color": "",
@@ -15,8 +15,8 @@
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "ワンダーファーム トマト味噌2個セット",
-      "product_id": "748222",
+      "name": "リマドス エラスチンリッチ30粒",
+      "product_id": "741006",
       "variants": [
         {
           "color": "",
@@ -27,8 +27,8 @@
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "サムライガーリック 黒ニンニク バラ200ｇ",
-      "product_id": "750210",
+      "name": "testQ BEAUTY Selection Vol.15",
+      "product_id": "749016",
       "variants": [
         {
           "color": "",
@@ -37,30 +37,6 @@
         }
       ],
       "overall_status": "IN_STOCK"
-    },
-    {
-      "name": "大堀相馬焼陶吉郎窯 極み泡立ちビアタンブラー",
-      "product_id": "750207",
-      "variants": [
-        {
-          "color": "",
-          "size": "",
-          "ats": "L"
-        }
-      ],
-      "overall_status": "LOW_IN_STOCK"
-    },
-    {
-      "name": "Enju TSUTSUJI 500ml",
-      "product_id": "740198",
-      "variants": [
-        {
-          "color": "",
-          "size": "",
-          "ats": "N"
-        }
-      ],
-      "overall_status": "SOLD_OUT"
     }
   ]
 }
