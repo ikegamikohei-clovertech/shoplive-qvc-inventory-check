@@ -1,38 +1,780 @@
 {
-  "updated_at": "2026-03-06T21:03:35.400121+09:00",
-  "campaign": "初のTSV！リマドスのエラスチンサプリ",
+  "updated_at": "2026-03-12T20:21:09.865451+09:00",
+  "campaign": "技アリ！シャツチュニック♪麻布プロバドール",
   "products": [
     {
-      "name": "リマドス エラスチンリッチ90粒セット",
-      "product_id": "742661",
+      "name": "Provador イージーケア 刺繍スリーブシャツチュニック",
+      "product_id": "750780",
       "variants": [
         {
-          "color": "",
-          "size": "",
+          "color": "ホワイト",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "3L",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "3L",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "3L",
+          "ats": "Y"
+        },
+        {
+          "color": "ライム",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ライム",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ライム",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ライム",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ライム",
+          "size": "3L",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "3L",
+          "ats": "Y"
+        },
+        {
+          "color": "サックス",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "サックス",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "サックス",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "サックス",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "サックス",
+          "size": "3L",
           "ats": "Y"
         }
       ],
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "リマドス エラスチンリッチ30粒",
-      "product_id": "741006",
+      "name": "Provadorイージーケア刺繍スリーブチュニック ネット限定カラー",
+      "product_id": "750781",
       "variants": [
         {
-          "color": "",
-          "size": "",
+          "color": "ブラック",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "3L",
           "ats": "Y"
         }
       ],
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "testQ BEAUTY Selection Vol.15",
-      "product_id": "749016",
+      "name": "Provador やわらかソフト甘織デニム ストレートパンツ",
+      "product_id": "752242",
       "variants": [
         {
-          "color": "",
-          "size": "",
+          "color": "ケミカル",
+          "size": "S/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "M/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "LL/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "3L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "S/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "M/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "LL/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "3L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "S/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "M/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "LL/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "3L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "S/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "M/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "LL/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ケミカル",
+          "size": "3L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "S/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "M/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "LL/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "3L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "S/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "M/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "LL/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "3L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "S/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "M/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "LL/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "3L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "S/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "M/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "LL/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "3L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "S/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "M/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "LL/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "3L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "S/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "M/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "LL/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "3L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "S/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "M/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "LL/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "3L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "S/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "M/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "LL/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー",
+          "size": "3L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "S/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "M/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "LL/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "3L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "S/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "M/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "LL/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "3L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "S/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "M/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "LL/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "3L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "S/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "M/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "LL/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "3L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "S/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "M/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "LL/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "3L/股下60",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "S/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "M/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "LL/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "3L/股下64",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "S/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "M/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "LL/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "3L/股下68",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "S/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "M/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "L/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "LL/股下72",
+          "ats": "Y"
+        },
+        {
+          "color": "ローズ",
+          "size": "3L/股下72",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "Provador クラフト刺繍 フーディーコート",
+      "product_id": "752245",
+      "variants": [
+        {
+          "color": "ホワイト",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "3L",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビー",
+          "size": "3L",
+          "ats": "Y"
+        },
+        {
+          "color": "ベージュ",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ベージュ",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ベージュ",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ベージュ",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ベージュ",
+          "size": "3L",
           "ats": "Y"
         }
       ],
