@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-26T20:36:58.403554+09:00",
-  "campaign": "筋活＆菌活のダブルの攻め！アミノ酸サプリ",
+  "updated_at": "2026-04-01T20:37:33.016214+09:00",
+  "campaign": "ターミナリアファーストでダイエットサポート！",
   "products": [
     {
-      "name": "J’s Amino 4700 90袋+5袋増量特別BOX",
-      "product_id": "751581",
+      "name": "ターミナリアファーストプロフェッショナル5[480粒]+ケース",
+      "product_id": "753218",
       "variants": [
         {
           "color": "",
@@ -15,25 +15,25 @@
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "J’s Amino 4700 30袋",
-      "product_id": "744449",
+      "name": "鉄＋骨活飲料レディココア ミルクココア味 90回分",
+      "product_id": "720005",
       "variants": [
         {
           "color": "",
           "size": "",
-          "ats": "Y"
+          "ats": "N"
         }
       ],
-      "overall_status": "IN_STOCK"
+      "overall_status": "SOLD_OUT"
     },
     {
-      "name": "熟成発酵濃縮黒にんにくゼリーα 60本",
-      "product_id": "743289",
+      "name": "鉄＋骨活飲料レディココア ミルクココア味30回分",
+      "product_id": "719340",
       "variants": [
         {
           "color": "",
           "size": "",
-          "ats": "Y"
+          "ats": "W"
         }
       ],
       "overall_status": "IN_STOCK"
