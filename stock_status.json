@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-04-01T21:03:32.654112+09:00",
-  "campaign": "ターミナリアファーストでダイエットサポート！",
+  "updated_at": "2026-04-03T20:25:49.926716+09:00",
+  "campaign": "キレイと元気のお守りに♪プラセンタサプリ",
   "products": [
     {
-      "name": "ターミナリアファーストプロフェッショナル5[480粒]+ケース",
-      "product_id": "753218",
+      "name": "プラセンタ100プレミアムEX++G600粒ミスト・クリーム付",
+      "product_id": "753823",
       "variants": [
         {
           "color": "",
@@ -15,25 +15,13 @@
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "鉄＋骨活飲料レディココア ミルクココア味 90回分",
-      "product_id": "720005",
+      "name": "プラセンタ100プレミアムEXプラスプラスG300粒",
+      "product_id": "736898",
       "variants": [
         {
           "color": "",
           "size": "",
-          "ats": "N"
-        }
-      ],
-      "overall_status": "SOLD_OUT"
-    },
-    {
-      "name": "鉄＋骨活飲料レディココア ミルクココア味30回分",
-      "product_id": "719340",
-      "variants": [
-        {
-          "color": "",
-          "size": "",
-          "ats": "W"
+          "ats": "Y"
         }
       ],
       "overall_status": "IN_STOCK"
