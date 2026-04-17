@@ -1,13 +1,232 @@
 {
-  "updated_at": "2026-04-03T20:33:43.063607+09:00",
-  "campaign": "キレイと元気のお守りに♪プラセンタサプリ",
+  "updated_at": "2026-04-17T20:36:43.647385+09:00",
+  "campaign": "春夏も快適♪着る木陰でUV対策",
   "products": [
     {
-      "name": "プラセンタ100プレミアムEX++G600粒ミスト・クリーム付",
-      "product_id": "753823",
+      "name": "ミズノ 着る木陰COOL 遮熱レディースパーカー",
+      "product_id": "749859",
       "variants": [
         {
-          "color": "",
+          "color": "ミントリーフ",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ミントリーフ",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ミントリーフ",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ミントリーフ",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ミントリーフ",
+          "size": "2XL",
+          "ats": "Y"
+        },
+        {
+          "color": "グレージュリーフ",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "グレージュリーフ",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "グレージュリーフ",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "グレージュリーフ",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "グレージュリーフ",
+          "size": "2XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "2XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "2XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ラベンダー",
+          "size": "2XL",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "2XL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "ミズノ 着る木陰COOL 遮熱UVメンズパーカー",
+      "product_id": "749860",
+      "variants": [
+        {
+          "color": "グレー杢",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー杢",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "グレー杢",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー杢",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー杢",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー杢",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック杢",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック杢",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック杢",
+          "size": "XL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "ミズノ 着る木陰COOL 遮熱UVシェード付きハット",
+      "product_id": "749861",
+      "variants": [
+        {
+          "color": "ブラック",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
           "size": "",
           "ats": "Y"
         }
@@ -15,11 +234,244 @@
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "プラセンタ100プレミアムEXプラスプラスG300粒",
-      "product_id": "736898",
+      "name": "ミズノ 着る木陰COOL 遮熱UVロングカーディガン",
+      "product_id": "749862",
       "variants": [
         {
-          "color": "",
+          "color": "ブラック",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "XL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "ミズノ 着る木陰COOL 遮熱UVクロップドパンツ",
+      "product_id": "749863",
+      "variants": [
+        {
+          "color": "ブラック",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "XL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "ミズノ 着る木陰COOL 遮熱UVワンピース",
+      "product_id": "749864",
+      "variants": [
+        {
+          "color": "ブルーグレー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
+          "size": "XL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "ミズノ 着る木陰COOL 遮熱UVプルオーバー",
+      "product_id": "749865",
+      "variants": [
+        {
+          "color": "ブルーグレー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルーグレー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "XL",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "アイスグレー",
+          "size": "XL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "ミズノ 着る木陰COOL 遮熱UVアームガード",
+      "product_id": "749858",
+      "variants": [
+        {
+          "color": "ブルーグレー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ダークネイビー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "トープ",
           "size": "",
           "ats": "Y"
         }
