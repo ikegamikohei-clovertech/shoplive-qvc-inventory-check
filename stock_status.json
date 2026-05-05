@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-05T21:02:21.210140+09:00",
+  "updated_at": "2026-05-05T21:04:20.991974+09:00",
   "campaign": "QVC25周年記念デザイン！キャシーマム",
   "products": [
     {
@@ -510,10 +510,10 @@
         {
           "color": "レフアグレー",
           "size": "",
-          "ats": "N"
+          "ats": "L"
         }
       ],
-      "overall_status": "IN_STOCK"
+      "overall_status": "LOW_IN_STOCK"
     }
   ]
 }
