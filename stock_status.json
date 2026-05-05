@@ -1,232 +1,38 @@
 {
-  "updated_at": "2026-04-17T21:04:37.675796+09:00",
-  "campaign": "春夏も快適♪着る木陰でUV対策",
+  "updated_at": "2026-05-05T20:50:27.585332+09:00",
+  "campaign": "QVC25周年記念デザイン！キャシーマム",
   "products": [
     {
-      "name": "ミズノ 着る木陰COOL 遮熱レディースパーカー",
-      "product_id": "749859",
+      "name": "キャシーマム 五つの島 タオルケット 約140×190cm",
+      "product_id": "752361",
       "variants": [
         {
-          "color": "ミントリーフ",
-          "size": "S",
-          "ats": "Y"
-        },
-        {
-          "color": "ミントリーフ",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ミントリーフ",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ミントリーフ",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ミントリーフ",
-          "size": "2XL",
-          "ats": "Y"
-        },
-        {
-          "color": "グレージュリーフ",
-          "size": "S",
-          "ats": "Y"
-        },
-        {
-          "color": "グレージュリーフ",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "グレージュリーフ",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "グレージュリーフ",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "グレージュリーフ",
-          "size": "2XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "S",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "2XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "S",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "2XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ラベンダー",
-          "size": "S",
-          "ats": "Y"
-        },
-        {
-          "color": "ラベンダー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ラベンダー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ラベンダー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ラベンダー",
-          "size": "2XL",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "S",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "2XL",
-          "ats": "Y"
-        }
-      ],
-      "overall_status": "IN_STOCK"
-    },
-    {
-      "name": "ミズノ 着る木陰COOL 遮熱UVメンズパーカー",
-      "product_id": "749860",
-      "variants": [
-        {
-          "color": "グレー杢",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "グレー杢",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "グレー杢",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルー杢",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルー杢",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルー杢",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ブラック杢",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブラック杢",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブラック杢",
-          "size": "XL",
-          "ats": "Y"
-        }
-      ],
-      "overall_status": "IN_STOCK"
-    },
-    {
-      "name": "ミズノ 着る木陰COOL 遮熱UVシェード付きハット",
-      "product_id": "749861",
-      "variants": [
-        {
-          "color": "ブラック",
+          "color": "ハイビスカスエメラルド",
           "size": "",
           "ats": "Y"
         },
         {
-          "color": "ダークネイビー",
+          "color": "ククイピスタチオ",
           "size": "",
           "ats": "Y"
         },
         {
-          "color": "トープ",
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
           "size": "",
           "ats": "Y"
         }
@@ -234,249 +40,480 @@
       "overall_status": "IN_STOCK"
     },
     {
-      "name": "ミズノ 着る木陰COOL 遮熱UVロングカーディガン",
-      "product_id": "749862",
+      "name": "キャシーマム 五つの島 フェイスタオル同色2枚セット",
+      "product_id": "752360",
       "variants": [
         {
-          "color": "ブラック",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブラック",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブラック",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "XL",
-          "ats": "Y"
-        }
-      ],
-      "overall_status": "IN_STOCK"
-    },
-    {
-      "name": "ミズノ 着る木陰COOL 遮熱UVクロップドパンツ",
-      "product_id": "749863",
-      "variants": [
-        {
-          "color": "ブラック",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブラック",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブラック",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "XL",
-          "ats": "Y"
-        }
-      ],
-      "overall_status": "IN_STOCK"
-    },
-    {
-      "name": "ミズノ 着る木陰COOL 遮熱UVワンピース",
-      "product_id": "749864",
-      "variants": [
-        {
-          "color": "ブルーグレー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "トープ",
-          "size": "XL",
-          "ats": "Y"
-        }
-      ],
-      "overall_status": "IN_STOCK"
-    },
-    {
-      "name": "ミズノ 着る木陰COOL 遮熱UVプルオーバー",
-      "product_id": "749865",
-      "variants": [
-        {
-          "color": "ブルーグレー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ブルーグレー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "ダークネイビー",
-          "size": "XL",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "M",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "L",
-          "ats": "Y"
-        },
-        {
-          "color": "アイスグレー",
-          "size": "XL",
-          "ats": "Y"
-        }
-      ],
-      "overall_status": "IN_STOCK"
-    },
-    {
-      "name": "ミズノ 着る木陰COOL 遮熱UVアームガード",
-      "product_id": "749858",
-      "variants": [
-        {
-          "color": "ブルーグレー",
+          "color": "ハイビスカスエメラルド",
           "size": "",
           "ats": "Y"
         },
         {
-          "color": "ダークネイビー",
+          "color": "ククイピスタチオ",
           "size": "",
           "ats": "Y"
         },
         {
-          "color": "トープ",
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
           "size": "",
           "ats": "Y"
         }
       ],
       "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 ピロー用タオル 約60×120cm",
+      "product_id": "752368",
+      "variants": [
+        {
+          "color": "ハイビスカスエメラルド",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ククイピスタチオ",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 タオルケット ネット限定柄",
+      "product_id": "752369",
+      "variants": [
+        {
+          "color": "ハイビスカスエメラルド",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ククイピスタチオ",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 クッション 約32×32cm",
+      "product_id": "752367",
+      "variants": [
+        {
+          "color": "ハイビスカスエメラルド",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ククイピスタチオ",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 バスタオル 約60×120cm",
+      "product_id": "752362",
+      "variants": [
+        {
+          "color": "ハイビスカスエメラルド",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ククイピスタチオ",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 ハンドタオル6枚セット 約34×35cm",
+      "product_id": "752366",
+      "variants": [
+        {
+          "color": "",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 ミニタオル6枚セット 約25×25cm",
+      "product_id": "752365",
+      "variants": [
+        {
+          "color": "",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 ショルダーバッグ 縦19横28cm",
+      "product_id": "752364",
+      "variants": [
+        {
+          "color": "ハイビスカスエメラルド",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ククイピスタチオ",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 丸底巾着ポーチ&ヘアバンド",
+      "product_id": "752363",
+      "variants": [
+        {
+          "color": "ハイビスカスエメラルド",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ククイピスタチオ",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "モキハナラベンダー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ロケラニピンク",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "レフアブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "イリマイエロー",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム プルオーバーカットソー ヤシ Aライン",
+      "product_id": "752358",
+      "variants": [
+        {
+          "color": "ホワイト",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ホワイト",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "グリーン",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "グリーン",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "グリーン",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "グリーン",
+          "size": "LL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム カットソー エンゼルストランペット ボートネック",
+      "product_id": "752359",
+      "variants": [
+        {
+          "color": "ブラック",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブラック",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ピンク",
+          "size": "LL",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "S",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "M",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "L",
+          "ats": "Y"
+        },
+        {
+          "color": "ブルー",
+          "size": "LL",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム 五つの島 バンダナ 約52×52cm",
+      "product_id": "753158",
+      "variants": [
+        {
+          "color": "レッド",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "アイボリー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ネイビーブルー",
+          "size": "",
+          "ats": "Y"
+        }
+      ],
+      "overall_status": "IN_STOCK"
+    },
+    {
+      "name": "キャシーマム プアナニ トートバッグ 縦32×横32×マチ1cm",
+      "product_id": "743724",
+      "variants": [
+        {
+          "color": "ハイビスカスピンク",
+          "size": "",
+          "ats": "N"
+        },
+        {
+          "color": "カーネーションブルー",
+          "size": "",
+          "ats": "Y"
+        },
+        {
+          "color": "ホンコンオーキッドグリーン",
+          "size": "",
+          "ats": "N"
+        },
+        {
+          "color": "ロケラニパープル",
+          "size": "",
+          "ats": "N"
+        },
+        {
+          "color": "モンステラネイビー",
+          "size": "",
+          "ats": "L"
+        },
+        {
+          "color": "レフアグレー",
+          "size": "",
+          "ats": "N"
+        }
+      ],
+      "overall_status": "LOW_IN_STOCK"
     }
   ]
 }
